@@ -1,0 +1,43 @@
+div.content {
+	/* The display of content is enabled using jQuery so that the slideshow content won't display unless javascript is enabled. */
+	display: none;
+}
+
+/*--photoBox--*/
+#photoBox {
+	position: relative;
+	width:800px;
+	height: 468px; /* This should be set to be at least the height of the largest image in the slideshow */
+}
+.loader {
+	position: absolute;
+	top: 0;
+	left: 0;
+	background:url(../images/work/interface/loader.gif) no-repeat center;
+	height: 468px; /* This should be set to be at least the height of the largest image in the slideshow */
+}
+#photoBox #slideshow {position:absolute; width:800px; height: 468px;}
+#photoBox span.image-wrapper img {
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+#photoBox a.advance-link {
+	display: block; text-decoration:none;
+	height: 468px; /* This should be set to be at least the height of the largest image in the slideshow */
+	line-height: 468px; /* This should be set to be at least the height of the largest image in the slideshow */
+}
+
+
+/*--caption--*/
+div.caption-container {
+	position: relative;
+}
+span.image-caption {
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+

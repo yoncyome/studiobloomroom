@@ -1,0 +1,207 @@
+@charset "UTF-8";
+
+/* -------------------------------------------------------------------
+	top
+------------------------------------------------------------------- */
+#top {min-height:1200px;}
+
+#top h1 {
+	text-align:center;
+	margin:0; padding:200px 0 160px;}
+#top #navi {width:900px; height:88px; background:url(../images/menu/navi_bg.png) repeat-x 0 0;}	
+#top #navi ul {
+	margin:0; padding:20px 0 0 209px;}
+#top #navi ul li {
+	float:left; padding-right:27px;}	
+.fixed {
+	position:fixed;
+	top:0; z-index:9999;}
+
+/* -------------------------------------------------------------------
+	共通
+------------------------------------------------------------------- */	
+#mind .leftBox {width:257px; padding-left:37px;}
+#studio .leftBox,
+#diary .leftBox {width:247px; padding-left:47px;}
+#map .leftBox {width:257px; padding-left:47px;}
+#mind .rightBox {width:560px; padding-right:45px;}
+#studio .rightBox,
+#map .rightBox {width:540px; padding-right:45px;}
+#diary .rightBox {width:540px; padding-right:65px;}
+h2 {width:141px;
+    height:141px;
+    border-radius: 141px;
+    -webkit-border-radius: 141px;
+    -moz-border-radius: 141px;}
+h2 img {padding:59px 0 0 0;}
+
+a img:hover {opacity:0.6;}
+	
+/* -------------------------------------------------------------------
+	mind
+------------------------------------------------------------------- */
+#mind {padding-top:105px; min-height:1150px;}
+#mind h2 {background:#ee86b4; margin-top:65px;}
+#mind h2 img {padding-left:41px;}
+#mind .leftBox h3 {padding:20px 0 0 25px;}
+#mind .leftBox p {padding:6px 0 0 25px;}
+#mind .rightBox h4,
+#mind .rightBox p.message {margin:0; padding:30px 0 40px 70px; font-size:.8em; line-height:1.8em;}
+#mind .rightBox p.works {margin:0; padding:20px 0 0 70px; font-size:.8em; line-height:1.8em;}
+#mind .rightBox h4 {margin:0; padding-top:20px; font-weight:normal;}
+#mind .rightBox p.message {margin-top:30px;}
+	
+/* -------------------------------------------------------------------
+	works
+------------------------------------------------------------------- */
+#works {padding-top:105px; min-height:1150px;}
+#works div.leftBox {width:; padding-left:47px;}
+#works div.leftBox p {font-size:85%; margin-left:27px;}
+#works div.rightBox {width:540px; padding-right:20px;}
+#works h2 {background:#52c3f1; margin-top:15px; margin-left:20px; float:left;}
+#works h2 img {padding-left:33px;}
+
+#works ul.category {float:right; width:79px; margin:0; padding:10px 0 0 25px;}
+#works ul.category li {margin:0; padding:0 0 8px;}
+
+#works h3 {margin:0; padding:0 0 0 25px;}
+#works p.read {margin:0; padding:5px 0 0;}
+
+#works p.leftBox {margin:0; padding:0; width:270px;}
+#works p.top {padding-left:70px;}
+#wrap #works p.pagetop {padding-right:20px}
+	
+/* -------------------------------------------------------------------
+	studio
+------------------------------------------------------------------- */
+#studio {padding-top:105px; min-height:1150px;}
+#studio h2 {background:#fccb00; margin-top:65px;}
+#studio h2 img {padding-left:32px;}
+#studio .leftBox p.about {margin:0; padding:20px 0 0;}
+#studio .leftBox h3 {margin:0; padding-top:20px; font-weight:normal;}
+#studio .leftBox p {margin:0; padding:0px;}
+
+/* -------------------------------------------------------------------
+	diary
+------------------------------------------------------------------- */
+#diary {padding-top:105px; min-height:1200px;}
+#diary h2 {background:#3c639e; margin-top:65px;}
+#diary h2 img {padding-left:41px;}
+ul#snsButton {
+	margin:0; padding:20px 0 0;}
+ul#snsButton li {
+	margin:0; padding:0 10px 0 0;
+	float:left;}
+
+#twitterWrap {
+	position:relative; height:600px;
+	overflow:hidden; margin:15px 0 0;}
+#twitter {
+	position:absolute;
+	top:-43px;}
+#diary iframe#twitter-widget-0 {
+	padding:0 0 0 0;}
+.timeline-Footer {display:none!important;}
+	
+/* -------------------------------------------------------------------
+	map
+------------------------------------------------------------------- */
+#map {padding-top:105px; min-height:1150px;}
+#map h2 {background:#00a486; margin-top:65px;}
+#map h2 img {padding-left:42px;}
+
+#map p.adress {margin:0; padding:45px 0 0;}
+#map ul.link {margin:0; padding:15px 0 0;}
+#map ul.link li {margin:0; padding:0 0 5px;}
+#map p.way {margin:0; padding:20px 0 0;}
+#map p.center {margin:0; padding:60px 0 0;}
+
+/* -------------------------------------------------------------------
+	共通
+------------------------------------------------------------------- */
+.center {text-align:center;}
+.leftBox {float:left;}
+.rightBox {float:right;}
+
+.clear{
+	clear:both;font-size:0px; 
+	height:0; line-height:0px;}
+	
+.clearfix:after {
+  content: ".";  /* 新しい要素を作る */
+  display: block;  /* ブロックレベル要素に */
+  clear: both;
+  height: 0;
+  visibility: hidden;
+}
+.clearfix {
+  min-height: 1px;
+}
+* html .clearfix {
+  height: 1px;
+  /*\*//*/
+  height: auto;
+  overflow: hidden;
+  /**/}
+	
+.none {display:none;}
+
+.sp00 {margin-top:0em;}
+.sp05 {margin-top:0.5em;}
+.sp10 {margin-top:1em;}
+
+#wrap p.pagetop {
+	margin:0; padding:20px 50px 0 0;
+	text-align:right;}
+
+
+/* -------------------------------------------------------------------
+	layout
+------------------------------------------------------------------- */	
+html {
+	text-align:center; margin:0; padding:0;
+	color:#000; height:100%;}
+#wrap {
+	margin: 0 auto; padding:0; width:900px; height:auto;
+	text-align:left;}
+
+/* -------------------------------------------------------------------
+	 BASIC FONT
+------------------------------------------------------------------- */
+body {font-size:77%; height:100%;}
+body {
+    font-family: "メイリオ","Meiryo";
+}
+* + html body {
+    font-family: "メイリオ","Meiryo";
+}
+
+/* -------------------------------------------------------------------
+	 BASIC SETTING 
+------------------------------------------------------------------- */
+html {overflow-y: scroll;}
+address, caption, cite, code, dfn, em, strong, th, var	{font-style: normal;}
+table	{border-collapse: collapse;	border-spacing: 0;}
+caption, th	{text-align: left;}
+q:before ,q:after	{content: '';}
+object, embed	{vertical-align: top;}
+h1,h2, h3, h4, h5, h6	{
+	font-size: 100%;}
+img, abbr, acronym, fieldset	{
+	border: 0;
+	vertical-align: bottom;}
+li	{list-style-type: none;}
+p,ul,ol,dl,h1,h2,h3,h4,h5,h6 {margin-top:1em; margin-bottom:0px; color:#231815; line-height:1.8em;}
+blockquote,form {margin-top:0px;margin-bottom:0px;}
+
+a:link    { color: #231815; }
+a:visited { color: #231815; }
+a:active  { color: #231815; }
+a:hover   { color: #0070ac; }
+
+strong { font-style: normal; font-weight:bold; }
+em     { font-style: normal; color: #990000;}
+
+img {border:none;}
+	
+
