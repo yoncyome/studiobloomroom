@@ -1,144 +1,532 @@
-<!DOCTYPE HTML>
-<html lang="ja">
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<meta http-equiv="Content-Script-Type" content="text/javascript" />
-<meta http-equiv="Content-Style-Type" content="text/css" />
-<meta name="keywords" content="studio Bloom Room,スタジオ・ブルームルーム,ブルームルーム,スタジオ,撮影,カメラマン,フォトグラファー,冨樫東正,本田織恵,宮本朝希,戸高元太郎,升谷玲子">
-<meta name="description" content="studio Bloom Room【スタジオ・ブルームルーム】は、東京新宿曙橋にある撮影会社です。スタジオでは人物から商品写真、ロケーション撮影では、建築や不動産広告などあらゆあらゆる撮影にご対応致します。カメラマンは冨樫東正、本田織恵、宮本朝希、戸高元太郎、升谷玲子">
-<title>studio Bloom Room (スタジオ・ブルームルーム)</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<title>djotsuka.com | DJ大塚広子 (Otsuka Hiroko) オフィシャル・ホームページ</title>
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!-- Bootstrap core CSS -->
+<link href="css/bootstrap.css" rel="stylesheet">
+<!-- Material Design Bootstrap -->
+<link href="css/mdb.css" rel="stylesheet">
+<!-- Your custom styles (optional) -->
+<link href="css/style.css" rel="stylesheet">
+<style type="text/css">
+@media (min-width: 800px) and (max-width: 850px) {
+		.navbar:not(.top-nav-collapse) {background: #1C2331!important;}
+}
+</style>
 
-<link rel="stylesheet" href="css/reset.css" type="text/css" media="all" />
-<link rel="stylesheet" href="css/top.css?20092901" type="text/css" media="all" />
-<link rel="shortcut icon" href="/images/favicon.ico" />
-
-<script type="text/javascript" src="js/jquery.js"></script>
-<script type="text/javascript" src="js/rollover.js"></script>
-<script type="text/javascript" src="js/smoothscroll.js"></script>
-<script type="text/javascript" src="js/menufixed.js"></script>
-<script type="text/javascript" src="js/pagesize.js"></script>
+<meta name="description" content="DJ 大塚広子 (Otsuka Hiroko) オフィシャル・ホームページ。ジャズをメインにDJ歴20年。アナログレコードにこだわった1960代以降のブラックミュージックの音源発掘から、現代ジャズ、クラブミュージックまで繋ぎ、ワン&オンリーな"JAZZのGROOVE"を呼び起こすDJ。">
+<meta name="keywords" content="大塚広子,Otsuka Hiroko,DJ,JAZZ">
+<meta property="og:site_name" content="DJ大塚広子 (Otsuka Hiroko) オフィシャル・ホームページ">
+<meta property="og:title" content="DJ大塚広子 (Otsuka Hiroko) オフィシャル・ホームページ">
+<meta property="og:description" content="大塚 広子（DJ/音楽ライター/プロデューサー）。ジャズをメインにDJ歴20年。アナログレコードにこだわった1960代以降のブラックミュージックの音源発掘から、現代ジャズ、クラブミュージックまで繋ぎ、ワン&オンリーな"JAZZのGROOVE"を呼び起こすDJ。">
+<meta property="og:type" content="article">
+<meta property="og:url" content="http://djotsuka.com/">
+<meta property="og:image" content="http://djotsuka.com/images/ogp.jpg">
 
 </head>
+
 <body>
 
-<div id="wrap">
+<!-- Header -->
+<header id="header" class="transparent-nav">
+  <!-- Navbar -->
+  <nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar">
+    <div class="container">
+      <!-- Brand -->
+      <strong><a href="/"><img id="logo" src="images/logo.png" alt="djotsuka.com"></a></strong>
+      <!-- Collapse -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- Links -->
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <!-- Left -->
+        <ul class="navbar-nav mr-auto">
+          <li id="menu01" class="nav-item active"><a class="nav-link" href="index.html">Top<span class="sr-only">(current)</span></a></li>
+          <li id="menu02" class="nav-item"><a class="nav-link" href="index.html#profile">Profile</a></li>
+          <li id="menu03" class="nav-item"><a class="nav-link" href="/work/disc/index.html">Work</a></li>
+          <li id="menu04" class="nav-item"><a class="nav-link" href="https://www.facebook.com/pg/djhirokootsuka/events/?ref=page_internal" target="_blank">Schedule</a></li>
+          <li id="menu05" class="nav-item"><a class="nav-link" href="/blog/">Blog</a></li>
+          <li id="menu06" class="nav-item"><a class="nav-link" href="mailto:info@djotsuka.com">Contact</a></li>
+        </ul>
+        <!-- Right -->
+        <ul class="navbar-nav nav-flex-icons">
+          <li class="nav-item"><a href="https://www.facebook.com/hiroko.otsuka.31" class="nav-link" target="_blank"><i class="fa fa-facebook"></i></a></li>
+          <li class="nav-item"><a href="https://www.instagram.com/djotsuka/" class="nav-link" target="_blank"><i class="fa fa-instagram"></i></a></li>
+          <li class="nav-item"><a href="https://twitter.com/djotsuka/" class="nav-link" target="_blank"><i class="fa fa-twitter"></i></a></li>
+        </ul>
+      </div>
+      <!-- /Links -->
+    </div>
+    <!-- /container -->
+  </nav>
+  <!-- /Navbar -->
+  <p id="pagetop"><a href="#header"><img src="images/pagetop.png" alt="PAGETOP"></a></p>
+</header>
+<!-- /Header -->
 
-<div id="top" class="clearfix">
-  <h1 id="topPadding"><img src="images/logo.gif" width="702" height="134" alt="studio Bloom Room (スタジオ・ブルームルーム)" title="studio Bloom Room (スタジオ・ブルームルーム)"></h1>
-  <div id="navi">
-    <ul>
-      <li><a href="#mind" onclick="_gaq.push(['_trackEvent', 'Menu', 'mind', 'mind']);"><img src="images/menu/mind.png" width="58" height="58" alt="mind" title="mind"></a></li>
-      <li><a href="#works" onclick="_gaq.push(['_trackEvent', 'Menu', 'works', 'works']);"><img src="images/menu/works.png" width="58" height="58" alt="works" title="works"></a></li>
-      <li><a href="#studio" onclick="_gaq.push(['_trackEvent', 'Menu', 'studio', 'studio']);"><img src="images/menu/studio.png" width="58" height="58" alt="studio" title="studio"></a></li>
-      <li><a href="#diary" onclick="_gaq.push(['_trackEvent', 'Menu', 'diary', 'diary']);"><img src="images/menu/diary.png" width="58" height="58" alt="diary" title="diary"></a></li>
-      <li><a href="#map" onclick="_gaq.push(['_trackEvent', 'Menu', 'map', 'map']);"><img src="images/menu/map.png" width="58" height="58" alt="map" title="map"></a></li>
-      <li><a href="mailto:info@studio-bloomroom.com?subject=from studio BloomRoom HP" target="_blank" onclick="_gaq.push(['_trackEvent', 'Menu', 'mail', 'mail']);"><img src="images/menu/mail.png" width="58" height="58" alt="mail" title="mail"></a></li>
+<!--Carousel Wrapper-->
+<div id="carousel-example-1z" class="carousel slide carousel-fade" data-ride="carousel">
+  <!--Indicators-->
+  <ol class="carousel-indicators">
+    <li data-target="#carousel-example-1z" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel-example-1z" data-slide-to="1"></li>
+    <li data-target="#carousel-example-1z" data-slide-to="2"></li>
+    <li data-target="#carousel-example-1z" data-slide-to="3"></li>
+    <li data-target="#carousel-example-1z" data-slide-to="4"></li>
+    <li data-target="#carousel-example-1z" data-slide-to="5"></li>
+    <li data-target="#carousel-example-1z" data-slide-to="6"></li>
+  </ol>
+  <p class="rabel"><img src="images/keyoflifeplus.png" alt="Key of Life＋" class="img-fluid"></p>
+  <!--/.Indicators-->
+  <!--Slides-->
+  <div class="carousel-inner" role="listbox">
+  	<!--06 slide-->
+    <div class="carousel-item active">
+      <div class="view">
+      	<img src="images/06.png" srcset="images/06.png, images/sp/06.png 736w" alt="大塚広子">
+        <!-- Mask & flexbox options-->
+        <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
+          <!-- Content -->
+          <div class="text-center white-text mx-5 wow fadeIn">
+            <h1><img src="images/djotsukacom.png" alt="djotsuka.com | DJ大塚広子 (Otsuka Hiroko) " class="img-fluid"></h1>
+            
+          </div>
+          <!-- Content -->
+        </div>
+        <!-- Mask & flexbox options-->
+      </div>
+    </div>
+    <!--/06 slide-->
+    <!--07 slide-->
+    <div class="carousel-item active">
+      <div class="view">
+      	<img src="images/07.png" srcset="images/07.png, images/sp/07.png 736w" alt="大塚広子">
+        <!-- Mask & flexbox options-->
+        <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
+          <!-- Content -->
+          <div class="text-center white-text mx-5 wow fadeIn">
+            <h1><img src="images/djotsukacom.png" alt="djotsuka.com | DJ大塚広子 (Otsuka Hiroko) " class="img-fluid"></h1>
+            
+          </div>
+          <!-- Content -->
+        </div>
+        <!-- Mask & flexbox options-->
+      </div>
+    </div>
+    <!--/07 slide-->
+    <!--01 slide-->
+    <div class="carousel-item active">
+      <div class="view">
+      	<img src="images/01.png" srcset="images/01.png, images/sp/01.png 736w" alt="大塚広子">
+        <!-- Mask & flexbox options-->
+        <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
+          <!-- Content -->
+          <div class="text-center white-text mx-5 wow fadeIn">
+            <h1><img src="images/djotsukacom.png" alt="djotsuka.com | DJ大塚広子 (Otsuka Hiroko) " class="img-fluid"></h1>
+            
+          </div>
+          <!-- Content -->
+        </div>
+        <!-- Mask & flexbox options-->
+      </div>
+    </div>
+    <!--/01 slide-->
+    <!--02 slide-->
+    <div class="carousel-item">
+      <div class="view">
+      	<img src="images/02.png" srcset="images/02.png, images/sp/02.png 736w" alt="大塚広子">
+        <!-- Mask & flexbox options-->
+        <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
+          <!-- Content -->
+          <div class="text-center white-text mx-5 wow fadeIn">
+            <h1><img src="images/djotsukacom.png" alt="djotsuka.com | DJ大塚広子 (Otsuka Hiroko) " class="img-fluid"></h1>
+          </div>
+          <!-- Content -->
+        </div>
+        <!-- Mask & flexbox options-->
+      </div>
+    </div>
+    <!--/02 slide-->
+    <!--03 slide-->
+    <div class="carousel-item">
+      <div class="view">
+      	<img src="images/03.png" srcset="images/03.png, images/sp/03.png 736w" alt="大塚広子">
+        <!-- Mask & flexbox options-->
+        <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
+          <!-- Content -->
+          <div class="text-center white-text mx-5 wow fadeIn">
+            <h1><img src="images/djotsukacom.png" alt="djotsuka.com | DJ大塚広子 (Otsuka Hiroko) " class="img-fluid"></h1>
+          </div>
+          <!-- Content -->
+        </div>
+        <!-- Mask & flexbox options-->
+      </div>
+    </div>
+    <!--/03 slide-->
+    <!--04 slide-->
+    <div class="carousel-item">
+      <div class="view">
+      	<img src="images/04.png" srcset="images/04.png, images/sp/04.png 736w" alt="大塚広子">
+        <!-- Mask & flexbox options-->
+        <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
+          <!-- Content -->
+          <div class="text-center white-text mx-5 wow fadeIn">
+            <h1><img src="images/djotsukacom.png" alt="djotsuka.com | DJ大塚広子 (Otsuka Hiroko) " class="img-fluid"></h1>
+          </div>
+          <!-- Content -->
+        </div>
+        <!-- Mask & flexbox options-->
+      </div>
+    </div>
+    <!--/04 slide-->
+    <!--05 slide-->
+    <div class="carousel-item">
+      <div class="view">
+      	<img src="images/05.png" srcset="images/05.png, images/sp/05.png 736w" alt="大塚広子">
+        <!-- Mask & flexbox options-->
+        <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
+          <!-- Content -->
+          <div class="text-center white-text mx-5 wow fadeIn">
+            <h1><img src="images/djotsukacom.png" alt="djotsuka.com | DJ大塚広子 (Otsuka Hiroko) " class="img-fluid"></h1>
+          </div>
+          <!-- Content -->
+        </div>
+        <!-- Mask & flexbox options-->
+      </div>
+    </div>
+    <!--/05 slide-->
+  </div>
+  <!--/.Slides-->
+
+  <!--Controls-->
+  <a class="carousel-control-prev" href="#carousel-example-1z" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carousel-example-1z" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+  <!--/.Controls-->
+</div>
+<!--/.Carousel Wrapper-->
+    
+
+<!--Main layout-->
+<main>
+
+  <!-- Profile -->
+  <div id="profile" class="section">
+    <!-- container -->
+    <div class="container">
+    <div class="section-title text-center">
+    <h2>Profile</h2>
+    </div>
+    </div>
+    <!-- //container -->
+  
+    <!-- container -->
+    <div class="container">
+
+      <div class="languageChange">
+        <button class="tabChange">Japanese</button>
+        <button class="tabChange">English</button>
+      </div>
+      <ul>
+        <li class="contChange">
+          <!-- row -->
+          <div class="row">
+            <div class="col-md-7">
+              <div class="section-header">
+                <h3>大塚 広子<span class="subText">（DJ/音楽ライター/プロデューサー）</span></h3>
+              </div>
+              <p>ジャズをメインにDJ歴20年。アナログレコードにこだわった1960代以降のブラックミュージックの音源発掘から、現代ジャズ、クラブミュージックまで繋ぎ、ワン&amp;オンリーな"JAZZのGROOVE"を呼び起こすDJ。徹底したレコードの音源追求と、繊細かつ大胆なプレイで全国的な現場の支持を得て、ニューヨーク、スペインの招聘、アジア最大級ジャズ・フェスティバル「東京ジャズ」にDJとして初の出演、2度の「FUJI ROCK FESTIVAL」、「Blue Note JAZZ FESTIVAL in JAPAN」等出演。クラブシーンのみならず、自らの提案で新宿PIT INNへDJ導入するなど、老舗ジャズ喫茶やジャズライヴハウスで評論家やミュージシャンとのコラボレーションを積極的に行い、柔軟なセンスで音楽の楽しみ方を提示している。<br>DJ活動の他、メディアでの執筆、選曲監修、伊勢丹新宿店をはじめ企業の音楽イベントプロデュース、自身のレーベルKey of LIfe+を主宰。現在生まれる音楽を審美眼を活かした切り口でまとめあげたコンピレーションシリーズ（PIECE THE NEXTシリーズ）や、気鋭ミュージシャンを束ねたプロデュース・ユニット（RM jazz legacy）のディレクション、リリース活動なども行う。DeAGOSTINIジャズレコードコレクション(2016年創刊号及び、書店PR文)、朝日新聞(2017年7月「ジャズと私」コーナー)、読売新聞（2018年2月「くらし家庭記事」）などメディアにおいても、ジャズ及びアナログレコード普及におけるオピニオンリーダーとして活躍。二児の母。</p>
+            </div>
+      
+            <div class="col-md-5">
+              <div class="about-img">
+                <img src="images/profile.jpg?21052601" alt="大塚 広子（DJ/音楽ライター/プロデューサー）" class="img-fluid">
+              </div>
+            </div>
+          </div>
+          <!-- /row -->  
+        </li>
+        <li class="contChange">
+          <!-- row -->
+          <div class="row">
+            <div class="col-md-7">
+              <div class="section-header">
+                <h3>Hiroko Otsuka<span class="subText">（DJ / Producer / Music Journalist）</span></h3>
+              </div>
+              <p>DJ Otsuka has over 20 years experience in the Japanese club and jazz scene, playing such events as the Blue Note Jazz Festival in Japan, the Tokyo Jazz Festival and the Fuji Rock Festival, plus the long running jazz/funk DJ session CHAMP at the legendary Tokyo venue The Room. She has also been the opening DJ for visiting acts such as Chris Dave, Derrick Hodge and Mark Guiliana.</p>
+              <p>She regularly contributes to local music publications such as JAZZ JAPAN, Jazz Perspective, LATINA, CD Journal, Wax Poetics Japan, with articles on rare jazz vinyl, new album reviews and interviews with visiting musicians such as Kamasi Washington and Makaya McCraven.</p>
+              <p>Her compilation series 'PIECE THE NEXT' features a wide range of  contemporary Japanese jazz musicians, and in 2015 she produced the all-star group RM Jazz Legacy's debut album, followed up by '2' in 2016.</p>
+              <p>She is currently working on two new compilations, including one of world music grooves from around the globe.</p>
+              <p>Hiroko lives in Tokyo with her two children and several thousand records.</p>
+            </div>
+      
+            <div class="col-md-5">
+              <div class="about-img">
+                <img src="images/profile.jpg" alt="大塚 広子（DJ/音楽ライター/プロデューサー）" class="img-fluid">
+              </div>
+            </div>
+          </div>
+          <!-- /row -->  
+        </li>
+      </ul>    
+
+    </div>
+    <!-- container -->
+  </div>
+  <!-- /Profile -->
+
+  <!-- Work -->
+  <div id="work" class="text-center paddsection">
+    <!-- container -->
+    <div class="container">
+      <div class="section-title text-center">
+        <h2>Work</h2>
+      </div>
+    </div>
+    <!-- //container -->
+    
+    <!-- container -->
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <!-- portfolio-list -->
+          <div class="portfolio-list">
+            <ul class="nav list-unstyled" id="portfolio-flters">
+              <li class="filter filter-active" data-filter=".all">all</li>
+              <li class="filter" data-filter=".disc">Disc</li>
+              <li class="filter" data-filter=".dj">DJ</li>
+              <li class="filter" data-filter=".writing">Writing</li>
+              <li class="filter" data-filter=".media">Media</li>
+            </ul>
+          </div>
+          <!-- //portfolio-list -->
+          <!-- portfolio-container -->
+          <div class="portfolio-container">
+          	            <div class="col-lg-4 col-md-6 portfolio-thumbnail all branding uikits disc">
+            <p class="tag">Disc</p>
+            <a class="popup-img" href="work/disc/index.html#newpeace03">
+            <img src="images/portfolio/shaky_jake.jpg" alt="V.A / Shaky Jake / grmethod">
+            <p class="title"><span class="mediaCat">7inch</span>V.A / Shaky Jake / grmethod</p>
+            <p class="comment">コンピレーション『PIECE THE NEXT JAPAN GUIDE』収録2曲が、7インチ仕様で初音源化。</p>
+            </a>
+            </div>
+          	<div class="col-lg-4 col-md-6 portfolio-thumbnail all branding uikits disc">
+            <p class="tag">Disc</p>
+            <a class="popup-img" href="work/disc/index.html#rm_jazz01">
+            <img src="images/portfolio/rmjazz.jpg" alt="RM jazz legacy / RM jazz legacy">
+            <p class="title"><span class="mediaCat">CD</span>RM jazz legacy / RM jazz legacy</p>
+            <p class="comment">DJ大塚広子初プロデュース・アルバム。</p>
+            </a>
+            </div>
+            <div class="col-lg-4 col-md-6 portfolio-thumbnail all branding uikits disc">
+            <p class="tag">Disc</p>
+            <a class="popup-img" href="work/disc/index.html#trio">
+            <img src="images/portfolio/trio.jpg" alt="the pieces of TRIO RECORDS mixed by Hiroko Otsuka">
+            <p class="title"><span class="mediaCat">CD</span>the pieces of TRIO RECORDS mixed by Hiroko Otsuka</p>
+            <p class="comment">和ジャズ音源の最重要宝庫TRIO RECORDSのOFFICIAL MIXCD。</p>
+            </a>
+            </div>
+            <div class="col-lg-4 col-md-6 portfolio-thumbnail all branding uikits dj">
+            <p class="tag">DJ</p>
+            <a class="popup-img" href="work/dj/index.html#bluenote">
+            <img src="images/portfolio/bluenote.jpg" alt="Blue Note JAZZ FESTIVAL in JAPAN 2016">
+            <p class="title"><span class="mediaCat">FESTIVAL</span>Blue Note JAZZ FESTIVAL in JAPAN 2016</p>
+            <p class="comment">Blue Note JAZZ FESTIVAL in JAPAN 2016 DJ出演</p>
+            </a>
+            </div>
+            <div class="col-lg-4 col-md-6 portfolio-thumbnail all mockups uikits dj">
+            <p class="tag">DJ</p>
+            <a class="popup-img" href="work/dj/index.html#vogue">
+            <img src="images/portfolio/vogue.jpg"  alt="VOGUE FASHION'S NIGHT OUT">
+            <p class="title"><span class="mediaCat">IN STORE DJ</span>VOGUE FASHION'S NIGHT OUT</p>
+            <p class="comment">「VOGUE FASHION'S NIGHT OUT」DJ出演</p>
+            </a>
+            </div>
+            <div class="col-lg-4 col-md-6 portfolio-thumbnail all branding webdesig dj">
+            <p class="tag">DJ</p>
+            <a class="popup-img" href="work/dj/index.html#fujirock2014">
+            <img src="images/portfolio/fujirock2014.jpg" alt="FUJIROCK FESTIVAL 2014">
+            <p class="title"><span class="mediaCat">FESTIVAL</span>FUJIROCK FESTIVAL 2014</p>
+            <p class="comment">「FUJIROCK FESTIVAL 2014」Crystal Palace Tent DJ出演</p>
+            </a>
+            </div>
+            <div class="col-lg-4 col-md-6 portfolio-thumbnail all branding uikits media">
+            <p class="tag">Media</p>
+            <a class="popup-img" href="work/media/index.html#nhkfm">
+            <img src="images/portfolio/nhkfm.jpg" alt="NHK FM 【ジャズで巡るエキゾチック世界旅行】">
+            <p class="title"><span class="mediaCat">RADIO</span>NHK FM 【ジャズで巡るエキゾチック世界旅行】</p>
+            <p class="comment">NHK FM 【ジャズで巡るエキゾチック世界旅行】 社長(SOIL&amp;PIMP SESSIONS)とともにナビゲーターを担当</p>
+            </a>
+            </div>
+            <div class="col-lg-4 col-md-6 portfolio-thumbnail all mockups uikits media">
+            <p class="tag">Media</p>
+            <a class="popup-img" href="work/media/index.html#asahi">
+            <img src="images/portfolio/asahi.jpg"  alt="朝日新聞【リレーオピニオン~ジャズと私】に掲載">
+            <p class="title"><span class="mediaCat">NEWS PAPER</span>朝日新聞</p>
+            <p class="comment">朝日新聞【リレーオピニオン~ジャズと私】に掲載</p>
+            </a>
+            </div>
+            <div class="col-lg-4 col-md-6 portfolio-thumbnail all mockups uikits media">
+            <p class="tag">Media</p>
+            <a class="popup-img" href="work/media/index.html#isetan">
+            <img src="images/portfolio/isetan.jpg"  alt="伊勢丹新宿店 「ニューヨーク展」NEW YORK NIGHT MARKET プロデュース">
+            <p class="title"><span class="mediaCat">SHOP EVENT</span>伊勢丹新宿店</p>
+            <p class="comment">伊勢丹新宿店 「ニューヨーク展」NEW YORK NIGHT MARKET プロデュース</p>
+            </a>
+            </div>
+            <div class="col-lg-4 col-md-6 portfolio-thumbnail all branding uikits writing">
+            <p class="tag">Writing</p>
+            <a class="popup-img" href="work/writing/index.html#kamasiwashington">
+            <img src="images/portfolio/kamasiwashington.jpg" alt="KAMASI WASHINGTONインタビュー取材＆執筆">
+            <p class="title"><span class="mediaCat">MAGAZINE</span>CD Journal</p>
+            <p class="comment">KAMASI WASHINGTONインタビュー取材＆執筆</p>
+            </a>
+            </div>
+            <div class="col-lg-4 col-md-6 portfolio-thumbnail all mockups uikits writing">
+            <p class="tag">Writing</p>
+            <a class="popup-img" href="work/writing/index.html#kiphanrahan">
+            <img src="images/portfolio/kiphanrahan.jpg"  alt="KIP HANRAHAN / Coup De Tête ライナーノーツ執筆">
+            <p class="title"><span class="mediaCat">CD</span>KIP HANRAHAN / Coup De Tête</p>
+            <p class="comment">KIP HANRAHAN / Coup De Tête ライナーノーツ執筆</p>
+            </a>
+            </div>
+            <div class="col-lg-4 col-md-6 portfolio-thumbnail all branding webdesig writing">
+            <p class="tag">Writing</p>
+            <a class="popup-img" href="work/writing/index.html#fatima">
+            <img src="images/portfolio/fatima.jpg" alt="FATIMA / And Yet It's All Love ライナーノーツ執筆">
+            <p class="title"><span class="mediaCat">CD</span>FATIMA / And Yet It's All Love</p>
+            <p class="comment">FATIMA / And Yet It's All Love ライナーノーツ執筆</p>
+            </a>
+            </div>
+          </div>
+          <!-- //portfolio-container -->
+        </div>
+      </div>
+    </div>
+    <!-- //container -->
+  </div>
+  <!-- /Work -->
+
+  <!-- Schedule -->
+  <div id="scheule" class="section">
+    <!-- container -->
+    <div class="container">
+    <div class="section-title text-center">
+    <h2>Schedule</h2>
+    </div>
+    </div>
+    <!-- //container -->   
+    <!-- container -->
+    <div class="container">
+    <div class="section-title text-center">
+    <p>イベントなどのスケジュールはこちらよりご確認ください</p>
+    <p class="linkBox"><a class="nav-link" href="https://www.facebook.com/pg/djhirokootsuka/events/?ref=page_internal" target="_blank">DJ Hiroko Otsuka facebookページ</a></p>
+    </div>
+    </div>
+    <!-- //container -->
+  </div>
+  <!-- /Schedule -->
+ 
+  <!-- Blog -->
+  <div id="blog" class="section">
+    <!-- container -->
+    <div class="container">
+    <div class="section-title text-center">
+    <h2>Blog</h2>
+    </div>
+    </div>
+    <!-- //container -->   
+    <!-- container -->
+    <div class="container">
+    <div class="section-title text-center">
+    <p class="linkBox"><a href="/blog/">公式Blog</a></p>
+    </div>
+    </div>
+    <!-- //container -->
+  </div>
+  <!-- /Blog --> 
+
+  <!-- Contact -->
+  <div id="contact" class="section">
+    <!-- container -->
+    <div class="container">
+    <div class="section-title text-center">
+    <h2>Contact</h2>
+    </div>
+    </div>
+    <!-- //container -->   
+    <!-- container -->
+    <div class="container">
+    <div class="section-title text-center">
+    <p>アーティストへの依頼・質問、ブッキングなど、各種お問い合わせはこちら</p>
+    <p class="linkBox"><a class="nav-link" href="mailto:info@djotsuka.com">info@djotsuka.com</a></p>
+    </div>
+    </div>
+    <!-- //container -->
+  </div>
+  <!-- /Contact -->
+
+    
+  </main>
+  <!--Main layout-->
+
+  <!--Footer-->
+  <div id="footer" class="text-center">
+  <!-- container -->
+  <div class="container">
+  <div class="section-title text-center">
+    <ul class="text-center">
+      <li><a href="https://www.facebook.com/hiroko.otsuka.31" class="nav-link" target="_blank"><i class="fa fa-facebook"></i></a><span class="title">facebook</span></li>
+      <li><a href="https://www.instagram.com/djotsuka/" class="nav-link" target="_blank"><i class="fa fa-instagram"></i></a><span class="title">instagram</span></li>
+      <li><a href="https://twitter.com/djotsuka/" class="nav-link" target="_blank"><i class="fa fa-twitter"></i></a><span class="title">twitter</span></li>
     </ul>
-  </div><!--navi-->
-</div><!--top-->
+    <p>Please Follow Me</p>
+  </div>
+  </div>
+  <!-- //container -->
+  
+	<p class="copyright">Copyright © 2019 djotsuka.com Rights Reserved.</p>
+  </div>
+  <!--/.Footer-->
 
-<div id="mind">
-	<div class="leftBox">
-  	<h2><img src="images/h2/mind.png" width="59" height="27" alt="mind" title="mind"></h2>
-    <h3><img src="images/h3_mind.gif" width="108" height="35" alt="スタジオ ブルーム ルーム" title="スタジオ ブルーム ルーム"></h3>
-    <p>東京新宿曙橋にある撮影会社です<br>スタジオでは人物から商品写真<br>ロケーション撮影では<br>建築や不動産広告など<br>あらゆる撮影にご対応致します</p>
-  </div>
-  <div class="rightBox">
-  	<p class="center"><img src="images/logo02.gif" width="293" height="293" alt="mind" title="mind"></p>
-    <p class="message"><img src="images/name.gif" width="375" height="127" alt="bloom (開花、花盛り) ＋ room (場所、部屋)　この場所から新しいものが生れ、つぼみから花が咲くようにと願いを込め、「スタジオ・ブルームルーム」と名付けました。私たちは、今までの枠を超え硬くて古いものから柔らかくて新鮮な発想を常に探し出し、発見しそれぞれの写真を表現し続けます。" title="bloom (開花、花盛り) ＋ room (場所、部屋)　この場所から新しいものが生れ、つぼみから花が咲くようにと願いを込め、「スタジオ・ブルームルーム」と名付けました。私たちは、今までの枠を超え硬くて古いものから柔らかくて新鮮な発想を常に探し出し、発見しそれぞれの写真を表現し続けます。"></p>
-    <p class="works">〈主な仕事〉<br>
-日清食品、SONY、KAGOME、資生堂、学研、TEIJIN 、TOCLAS、みずほ銀行、AXA生命、<br>
-大京、三菱地所レジデンス、三井不動産レジデンシャル、大和ハウス、サンケイビル、<br>
-長谷工コーポレーション、明和地所、小田急電鉄、東武鉄道、新日鉄住金</p>
-    <p class="works">〈協力会社〉<br>
-<a href="https://cpug.jp/" target="_blank">グラフィック・Webデザイン / シーピーユー・グラフィックス</a></p> 
-
-  </div>
-  <br class="clear">
-  <p class="pagetop"><a href="#wrap" onclick="_gaq.push(['_trackEvent', 'Pagetop', 'message block', 'top']);"><img src="images/pagetop.gif" width="49" height="18" alt="" title=""></a></p>
-</div><!--mind-->
-
-<div id="works">
-	<div class="leftBox">
-  	<h2><img src="images/h2/works.png" width="74" height="27" alt="works" title="works"></h2>
-    <ul class="category">
-    	<li><a href="http://studio-bloomroom.tumblr.com/tagged/room/" target="tumblr"><img src="images/link01.gif" width="79" height="16" alt="" title=""></a></li>
-      <li><a href="http://studio-bloomroom.tumblr.com/tagged/landscape/" target="tumblr"><img src="images/link02.gif" width="79" height="16" alt="" title=""></a></li>
-      <li><a href="http://studio-bloomroom.tumblr.com/tagged/portrait/" target="tumblr"><img src="images/link03.gif" width="79" height="16" alt="" title=""></a></li>
-      <li><a href="http://studio-bloomroom.tumblr.com/tagged/stilllife/" target="tumblr"><img src="images/link04.gif" width="79" height="16" alt="" title=""></a></li>
-      <li><a href="http://studio-bloomroom.tumblr.com/tagged/food/" target="tumblr"><img src="images/link05.gif" width="79" height="16" alt="" title=""></a></li>
-    </ul>
-    <br class="clear">
-    <h3><a href="http://studio-bloomroom.tumblr.com" target="_blank"><img src="images/tumblr.gif" width="245" height="16" alt="公式ポートフォリオ (tumblr)" title="公式ポートフォリオ (tumblr)"></a></h3>
-    <p class="read">知識と経験が豊富なカメラマン・スタッフが在籍<br>各種プロダクト、モデル、フード、ロケーション、<br>あらゆる撮影に対応し、丁寧でハイクオリティな<br>仕上がりでお応えいたします</p>
-  </div>
-  <div class="rightBox">
-  	<p class="leftBox"><a href="http://studio-bloomroom.tumblr.com/tagged/togashi/" target="tumblr"><img src="images/staff01.jpg" width="270" height="270" alt="冨樫 東正 Harumasa Togashi" title="冨樫 東正 Harumasa Togashi"></a></p>
-    <p class="leftBox"><a href="http://studio-bloomroom.tumblr.com/tagged/honda/" target="tumblr"><img src="images/staff02.jpg" width="270" height="270" alt="本田 織恵 Orie Honda" title="本田 織恵 Orie Honda"></a></p>
-  </div>
-  <br class="clear">
-  <p class="leftBox top"><a href="http://studio-bloomroom.tumblr.com/tagged/miyamoto/" target="tumblr"><img src="images/staff03.jpg" width="270" height="270" alt="宮本 朝希 Tomoki Miyamoto" title="宮本 朝希 Tomoki Miyamoto"></a></p>
-  <p class="leftBox"><a href="http://studio-bloomroom.tumblr.com/tagged/todaka/" target="tumblr"><img src="images/staff04.jpg" width="270" height="270" alt="戸高 元太郎 Gentarou Todaka" title="戸高 元太郎 Gentarou Todaka"></a></p>
-  <p class="leftBox"><a href="http://studio-bloomroom.tumblr.com/tagged/masutani/" target="tumblr"><img src="images/staff05.jpg" width="270" height="270" alt="升谷 玲子 Reiko Masutani" title="升谷 玲子 Reiko Masutani"></a></p>
-  <br class="clear">
-  <p class="pagetop"><a href="#wrap" onclick="_gaq.push(['_trackEvent', 'Pagetop', 'message block', 'top']);"><img src="images/pagetop.gif" width="49" height="18" alt="" title=""></a></p>
-</div><!---works--->
-
-<div id="studio">
-	<div class="leftBox">
-  	<h2><img src="images/h2/studio.png" width="76" height="27" alt="studio" title="studio"></h2>
-    <p class="about">都営新宿線曙橋駅と<br>都営大江戸線若松河田駅から<br>それぞれ10分圏内で利便性も高いです<br>白い空間のスタジオは<br>天井も高く色々な撮影が可能です</p>
-    <h3>Studio spec</h3>
-    <p>H3400 × W5600 × D6600</p>
-  </div>
-  <div class="rightBox">
-  	<p class="center"><img src="images/studio_photo.jpg" width="540" height="539" alt="スタジオ" title="スタジオ"></p>
-  </div>
-  <br class="clear">
-  <p class="pagetop"><a href="#wrap" onclick="_gaq.push(['_trackEvent', 'Pagetop', 'message block', 'top']);"><img src="images/pagetop.gif" width="49" height="18" alt="" title=""></a></p>
-</div><!--studio-->
-
-<div id="diary">
-	<div class="leftBox">
-  	<h2><img src="images/h2/diary.png" width="62" height="27" alt="diary" title="diary"></h2>
-    <p class="about">ブルームルームの近況を<br>お伝えします。</p>
-    <ul id="snsButton">
-      <li><a href="http://www.facebook.com/studiobloomroom" target="_blank"><img src="images/facebook_off.gif" width="41" height="40" alt="" title=""></a></li>
-      <li><a href="https://twitter.com/studiobloomroom/" target="_blank"><img src="images/twitter_off.gif" width="41" height="40" alt="" title=""></a></li>
-    </ul>
-    <br class="clear">
-  </div>
-  <div class="rightBox">
-    <a class="twitter-timeline" data-lang="ja" data-width="700" data-height="600" href="https://twitter.com/studiobloomroom?ref_src=twsrc%5Etfw">Tweets by studiobloomroom</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-  </div>
-  <br class="clear">
-  <p class="pagetop"><a href="#wrap" onclick="_gaq.push(['_trackEvent', 'Pagetop', 'message block', 'top']);"><img src="images/pagetop.gif" width="49" height="18" alt="" title=""></a></p>
-</div><!--diary-->
-
-<div id="map">
-	<div class="leftBox">
-  	<h2><img src="images/h2/map.png" width="53" height="27" alt="map" title="map"></h2>
-    <p class="adress">〒162-0065<br>(株) スタジオ・ブルームルーム<br>studioBloomRoom<br>東京都新宿区住吉町11-18<br>マリオン新宿河田B1F<br>tel：03-6380-0314<br>fax：03-6380-0261</p>
-    <ul class="link">
-    	<li><a href="pdf/map.pdf" target="_blank" onclick="_gaq.push(['_trackEvent', 'map', 'pdf', 'pdf']);"><img src="images/pdf_buttom.gif" width="138" height="45" alt="MAP PDF" title="MAP PDF"></a></li>
-      <li><a href="http://maps.google.co.jp/maps?saddr=35.692524,139.722008&amp;daddr=%E6%9D%B1%E4%BA%AC%E9%83%BD%E6%96%B0%E5%AE%BF%E5%8C%BA%E4%BD%8F%E5%90%89%E7%94%BA%EF%BC%91%EF%BC%91%E2%88%92%EF%BC%91%EF%BC%98&amp;hl=ja&amp;ie=UTF8&amp;sll=35.693718,139.721793&amp;sspn=0.005385,0.01031&amp;geocode=FQegIAIdDv1TCA%3BFfWqIAIdPfVTCCmlx4Zk5YwYYDE-ve9-Wemmsw&amp;oq=%E6%9B%99%E6%A9%8B&amp;gl=jp&amp;brcurrent=3,0x60188d2059b7fd4b:0xec61c68fe232efd2,1&amp;ttype=now&amp;noexp=0&amp;noal=0&amp;sort=def&amp;mra=dme&amp;mrsp=0&amp;sz=17&amp;t=m&amp;start=0&amp;ll=35.693718,139.721793&amp;spn=0.005385,0.01031&amp;source=embed" target="_blank" onclick="_gaq.push(['_trackEvent', 'map', 'google map', 'google map']);"><img src="images/google_buttom.gif" width="138" height="45" alt="MAP PDF" title="MAP PDF"></a></li>
-      <li><a href="mailto:info@studio-bloomroom.com?subject=from studio BloomRoom HP" target="_blank" onclick="_gaq.push(['_trackEvent', 'map', 'mail', 'mail']);"><img src="images/mail_buttom.gif" width="138" height="45" alt="MAP PDF" title="MAP PDF"></a></li>
-    </ul>
-    <p class="way">最寄駅<br>都営新宿線「曙橋駅」A2出口より<br>右に出て曙橋通りを約200m<br>1Fが「あけぼのばし接骨院」さんになります</p>
-  </div>
-  <div class="rightBox">
-  	<p class="center"><img src="images/map.gif" width="426" height="506" alt="mind" title="mind"></p>
-  </div>
-  <br class="clear">
-  <p class="pagetop"><a href="#wrap" onclick="_gaq.push(['_trackEvent', 'Pagetop', 'message block', 'top']);"><img src="images/pagetop.gif" width="49" height="18" alt="" title=""></a></p>
-</div><!--map-->
-
-</div><!--wrap-->
+    <!-- SCRIPTS -->
+    <!-- JQuery -->
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+    <script type="text/javascript" src="js/smoothscroll.js"></script>
+      <!-- Initializations -->
+  <script type="text/javascript">
+    // Animations initialization
+    new WOW().init();
+  </script>
+  <script src="js/localmenu.js" type="text/javascript"></script>
+	<script src="js/jquery-migrate.min.js" type="text/javascript"></script>
+  <script src="js/owl.carousel.min.js" type="text/javascript"></script>
+  <script src="js/isotope.pkgd.min.js" type="text/javascript"></script>
+  <script src="js/main.js" type="text/javascript"></script>  
 
 <script type="text/javascript">
 
   var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-29100776-1']);
+  _gaq.push(['_setAccount', 'UA-4310265-1']);
   _gaq.push(['_trackPageview']);
 
   (function() {
@@ -147,7 +535,7 @@
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
   })();
 
-</script>
-
+</script>  
 </body>
+
 </html>
