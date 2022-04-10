@@ -1,0 +1,196 @@
+/* Required height of parents of the Full Page Carousel for proper displaying carousel itself */
+html,
+body,
+.view {
+  height: 100%; }
+
+/* Heading Base Styles */
+h2 {padding:70px 0 20px;}
+h3 {font-size:;}
+h4 {font-size:;}
+p.caution {font-size:0.8rem;}
+
+/* Block Box Styles */
+.linkBox {
+	display: inline-block;
+	margin:30px 0 100px;
+	padding: 0.3em 1em;
+	text-decoration: none;
+	color: #000;
+	border: solid 2px #000;
+	border-radius: 3px;
+	transition: .4s;
+}
+a:hover {text-decoration:none!important;}
+.linkBox a:hover {color:#333333;}
+.linkBox:hover {
+  background: #e6e6e6;
+}
+
+/* Full Page Carousel itself*/
+.carousel {
+  height: 100%; }
+  .carousel .carousel-inner {
+    height: 100%; background:#000;}
+    .carousel .carousel-inner .carousel-item,
+    .carousel .carousel-inner .active {
+      height: 100%; }
+
+/* Navbar animation */
+.navbar {
+  background-color: rgba(255, 255, 255, 0.5); }
+
+.top-nav-collapse {
+  background-color: rgba(255, 255, 255, 0.9); }
+
+/* Adding color to the Navbar on mobile */
+@media only screen and (max-width: 768px) {
+  .navbar {
+    background-color: #fff; } 
+  .navbar.navbar-dark .navbar-nav .nav-item.active > .nav-link {
+		border-bottom:none;}
+    .navbar.navbar-dark .breadcrumb .nav-item.active > .nav-link:hover,
+    .navbar.navbar-dark .navbar-nav .nav-item.active > .nav-link:hover {
+      color: #000; }		
+
+}
+
+/* Footer color for sake of consistency with Navbar */
+.page-footer {
+  background-color: #1C2331; }
+	
+/*-----------------------------------------------------------------------------------*/
+/*  Header
+/*-----------------------------------------------------------------------------------*/
+#header .navbar-brand {font-size:1.6rem;}
+#header .nav-item {font-size:1.4rem; padding-right:15px;}
+#header .top-nav-collapse li.nav-item {font-size:1.3rem;}
+
+#header .navbar-nav .nav-link:hover {
+	border-bottom:2px solid #000;
+  -moz-transition: all 0.5s ease-in-out 0s;
+  -ms-transition: all 0.5s ease-in-out 0s;
+  -o-transition: all 0.5s ease-in-out 0s;
+  -webkit-transition: all 0.5s ease-in-out 0s;
+  transition: all 0.5s ease-in-out 0s;
+}
+
+p#pagetop {position:fixed; right:15px; bottom:-10px; z-index:100000;}
+
+@media only screen and (max-width: 768px) {
+  #header strong img#logo {width:90%;}
+
+}
+
+/*-----------------------------------------------------------------------------------*/
+/*  Carousel Wrapper
+/*-----------------------------------------------------------------------------------*/
+#carousel-example-1z h1,
+#carousel-example-1z p.rabel {text-align:center!important;}
+#carousel-example-1z h1 {margin-bottom:-100px;}
+#carousel-example-1z p.photoby {position:absolute; z-index:100000;right:10%; bottom:50px;}
+
+.carousel-control-prev, .carousel-control-next {display:none;}
+
+@media only screen and (max-width: 768px) {
+  #carousel-example-1z h1 img {width:100%;}
+	#carousel-example-1z p.rabel img {width:40%;}	
+
+}
+
+/*-----------------------------------------------------------------------------------*/
+/*  Icon
+/*-----------------------------------------------------------------------------------*/
+ul.extlink {margin:0;}
+ul.extlink li {display:inline; background:#999; margin:0 5px 0 0; padding:3px 5px; text-align:left;}
+
+/*-----------------------------------------------------------------------------------*/
+/*  Work
+/*-----------------------------------------------------------------------------------*/
+
+#work {
+  position: relative;
+  padding-bottom: 50px;
+}
+
+#work .portfolio-list {
+  margin-bottom: 50px;
+}
+
+#work .portfolio-list .nav {
+  display: inline-block;
+  margin: 0;
+}
+
+#work .portfolio-list .nav li {
+  margin: 0 40px 0 0;
+  float: left;
+  font-size: 1.4rem;
+  color: #999999;
+  line-height: 16px;
+  cursor: pointer;
+  font-family: 'Poppins', helvetica;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  -moz-transition: all 0.5s ease-in-out 0s;
+  -ms-transition: all 0.5s ease-in-out 0s;
+  -o-transition: all 0.5s ease-in-out 0s;
+  -webkit-transition: all 0.5s ease-in-out 0s;
+  transition: all 0.5s ease-in-out 0s;
+}
+@media only screen and (max-width: 768px) {
+ #work .portfolio-list .nav li {margin: 0 30px 0 0;}
+}
+
+
+#work .portfolio-list .nav li:last-child {margin:0;}
+
+#work .portfolio-list .nav li:hover, #work .portfolio-list .nav li.filter-active  {
+	padding:0 0 8px;
+	border-bottom:2px solid #000;
+  -moz-transition: all 0.5s ease-in-out 0s;
+  -ms-transition: all 0.5s ease-in-out 0s;
+  -o-transition: all 0.5s ease-in-out 0s;
+  -webkit-transition: all 0.5s ease-in-out 0s;
+  transition: all 0.5s ease-in-out 0s;
+}
+
+#work .portfolio-container {
+  display: inline-block;  position:relative;
+  width: 100%; z-index:10;
+}
+
+#work p.tag {margin:0; padding:3px 10px; font-size:1rem; position:absolute; z-index:10000; background:rgba(255,255,255,0.8);}
+#work p.title {margin:0; padding:5px 0 0; font-size:1.2rem; font-weight:bold; text-align:left; line-height:2rem;}
+#work p.title .mediaCat {background:#000; color:#fff; font-size:0.8rem; margin-right:10px; padding:3px 5px; font-weight:normal;}
+#work p.comment {margin:0; padding:5px 0 0; font-size:1rem; line-height:1.6rem; text-align:left;}
+
+.portfolio-thumbnail {
+  margin-bottom: 30px;
+  overflow: hidden;
+  min-height: 260px;
+}
+
+.portfolio-thumbnail img {
+  max-width: 100%; z-index:50;
+}
+
+
+/*-----------------------------------------------------------------------------------*/
+/*  Contact
+/*-----------------------------------------------------------------------------------*/
+#contact p.mail {font-size:2.2rem;}
+
+/*-----------------------------------------------------------------------------------*/
+/*  Footer
+/*-----------------------------------------------------------------------------------*/
+#footer p {padding:0 0 0 0;}
+#footer ul {margin:30px 50px 30px 0;}
+#footer ul li {list-style:none; display:inline-block; padding:0 30px; font-size:1.8rem;}
+#footer ul li .title {font-size:1.0rem;}
+#footer p.copyright {padding:50px 0 0 30px;}
+@media only screen and (max-width: 768px) {
+  #footer p.copyright {font-size:1.0rem;}
+
+}
