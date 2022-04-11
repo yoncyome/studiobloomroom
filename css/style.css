@@ -102,7 +102,7 @@ p#pagetop {position:fixed; right:15px; bottom:-10px; z-index:100000;}
 /*  Icon
 /*-----------------------------------------------------------------------------------*/
 ul.extlink {margin:0;}
-ul.extlink li {display:inline; background:#999; margin:0 5px 0 0; padding:3px 5px; text-align:left;}
+ul.extlink li {display:inline-block; background:#999; margin:0 5px 0 0; padding:3px 5px; text-align:left;}
 
 /*-----------------------------------------------------------------------------------*/
 /*  Work
@@ -112,7 +112,8 @@ ul.extlink li {display:inline; background:#999; margin:0 5px 0 0; padding:3px 5p
   position: relative;
   padding-bottom: 50px;
 }
-
+#work h2 {position:relative;}
+#work ul {position:absolute; top:70px; right:600px;}
 #work .portfolio-list {
   margin-bottom: 50px;
 }
@@ -175,7 +176,10 @@ ul.extlink li {display:inline; background:#999; margin:0 5px 0 0; padding:3px 5p
 .portfolio-thumbnail img {
   max-width: 100%; z-index:50;
 }
-
+/*-----------------------------------------------------------------------------------*/
+/*  MEMBER
+/*-----------------------------------------------------------------------------------*/
+#member ul {padding-inline-start: 0px;}
 
 /*-----------------------------------------------------------------------------------*/
 /*  Contact
