@@ -104,42 +104,40 @@ p#pagetop {position:fixed; right:15px; bottom:-10px; z-index:100000;}
 ul.extlink {margin:0;}
 ul.extlink li {display:inline-block; background:#999; margin:0 5px 0 0; padding:3px 5px; text-align:left;}
 
+.navbar-nav li {
+	font-family:'Font Awesome 5 Free';
+	font-weight:normal;}
+
 /*-----------------------------------------------------------------------------------*/
 /*  Work
 /*-----------------------------------------------------------------------------------*/
 
 #work {
-  position: relative;
   padding-bottom: 50px;
 }
-#work h2 {position:relative;}
-#work ul {position:absolute; top:70px; right:600px;}
+
 #work .portfolio-list {
   margin-bottom: 50px;
 }
 
 #work .portfolio-list .nav {
-  display: inline-block;
+	display: inline;
   margin: 0;
 }
 
 #work .portfolio-list .nav li {
-  margin: 0 40px 0 0;
-  float: left;
+  margin: 0 40px 0 0; height:35px;
+	display:inline-block;
   font-size: 1.4rem;
   color: #999999;
-  line-height: 16px;
   cursor: pointer;
   font-family: 'Poppins', helvetica;
   font-weight: 500;
   letter-spacing: 0.02em;
   text-transform: capitalize;
-  -moz-transition: all 0.5s ease-in-out 0s;
-  -ms-transition: all 0.5s ease-in-out 0s;
-  -o-transition: all 0.5s ease-in-out 0s;
-  -webkit-transition: all 0.5s ease-in-out 0s;
-  transition: all 0.5s ease-in-out 0s;
 }
+#work .portfolio-list .nav li a {line-height:2em;}
+
 @media only screen and (max-width: 768px) {
  #work .portfolio-list .nav li {margin: 0 30px 0 0;}
 }
@@ -148,13 +146,8 @@ ul.extlink li {display:inline-block; background:#999; margin:0 5px 0 0; padding:
 #work .portfolio-list .nav li:last-child {margin:0;}
 
 #work .portfolio-list .nav li:hover, #work .portfolio-list .nav li.filter-active  {
-	padding:0 0 8px;
+	padding:0;
 	border-bottom:2px solid #000;
-  -moz-transition: all 0.5s ease-in-out 0s;
-  -ms-transition: all 0.5s ease-in-out 0s;
-  -o-transition: all 0.5s ease-in-out 0s;
-  -webkit-transition: all 0.5s ease-in-out 0s;
-  transition: all 0.5s ease-in-out 0s;
 }
 
 #work .portfolio-container {
@@ -182,9 +175,19 @@ ul.extlink li {display:inline-block; background:#999; margin:0 5px 0 0; padding:
 #member ul {padding-inline-start: 0px;}
 
 /*-----------------------------------------------------------------------------------*/
+/*  SNS
+/*-----------------------------------------------------------------------------------*/
+#sns {
+	font-family:'Font Awesome 5 Free';
+	font-weight:normal;}
+
+/*-----------------------------------------------------------------------------------*/
 /*  Contact
 /*-----------------------------------------------------------------------------------*/
 #contact p.mail {font-size:2.2rem;}
+#contact {
+	font-family:'Font Awesome 5 Free';
+	font-weight:normal;}
 
 /*-----------------------------------------------------------------------------------*/
 /*  Footer
