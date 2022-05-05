@@ -1732,7 +1732,7 @@ a.text-light:hover, a.text-light:focus {
     background-attachment: fixed; }
   .view img, .view video {
 		margin:0 auto;
-    display: block; text-align:center; }
+    display: block; text-align:center; width:100%;}
   .view video.video-intro {
     z-index: -100;
     top: 50%;
