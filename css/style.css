@@ -38,20 +38,21 @@ a:hover {text-decoration:none!important;}
 
 /* Navbar animation */
 .navbar {
-  background-color: rgba(255, 255, 255, 0.5); }
+  background-color: rgba(0,0,0,0.2); }
 
 .top-nav-collapse {
-  background-color: rgba(255, 255, 255, 0.9); }
+  background-color: rgba(0,0,0,0.2); }
+
+.navbar .logo img {width:50%;}
 
 /* Adding color to the Navbar on mobile */
 @media only screen and (max-width: 768px) {
-  .navbar {
-    background-color: #fff; } 
   .navbar.navbar-dark .navbar-nav .nav-item.active > .nav-link {
 		border-bottom:none;}
     .navbar.navbar-dark .breadcrumb .nav-item.active > .nav-link:hover,
     .navbar.navbar-dark .navbar-nav .nav-item.active > .nav-link:hover {
       color: #000; }		
+		.navbar .logo img {width:30%;}
 
 }
 
@@ -67,7 +68,7 @@ a:hover {text-decoration:none!important;}
 #header .top-nav-collapse li.nav-item {font-size:1.3rem;}
 
 #header .navbar-nav .nav-link:hover {
-	border-bottom:2px solid #000;
+	border-bottom:2px solid #fff;
   -moz-transition: all 0.5s ease-in-out 0s;
   -ms-transition: all 0.5s ease-in-out 0s;
   -o-transition: all 0.5s ease-in-out 0s;
@@ -75,10 +76,15 @@ a:hover {text-decoration:none!important;}
   transition: all 0.5s ease-in-out 0s;
 }
 
+
+
 p#pagetop {position:fixed; right:15px; bottom:-10px; z-index:100000;}
 
 @media only screen and (max-width: 768px) {
   #header strong img#logo {width:90%;}
+	#header .navbar-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255,1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
 
 }
 
@@ -88,14 +94,15 @@ p#pagetop {position:fixed; right:15px; bottom:-10px; z-index:100000;}
 #carousel-example-1z h1,
 #carousel-example-1z p.rabel {text-align:center!important;}
 #carousel-example-1z h1 {margin-bottom:-100px;}
-#carousel-example-1z p.photoby {position:absolute; z-index:100000;right:10%; bottom:50px;}
+#carousel-example-1z .view img {position:relative;}
+#carousel-example-1z p.photoby {position:absolute; z-index:100000;right:1%; bottom:10%; writing-mode: vertical-rl; -ms-writing-mode: tb-rl; color:#fff; text-shadow:1px 1px 0 rgba(0,0,0, 0.1), -1px -1px 0 rgba(0,0,0, 0.1), -1px 1px 0 rgba(0,0,0, 0.1), 1px -1px 0 rgba(0,0,0, 0.1), 0px 1px 0 rgba(0,0,0, 0.1),  0-1px 0 rgba(0,0,0, 0.1), -1px 0 0 rgba(0,0,0, 0.1), 1px 0 0 rgba(0,0,0, 0.1);}
 
 .carousel-control-prev, .carousel-control-next {display:none;}
 
 @media only screen and (max-width: 768px) {
   #carousel-example-1z h1 img {width:100%;}
 	#carousel-example-1z p.rabel img {width:40%;}	
-
+	#carousel-example-1z p.photoby {font-size: 1rem;}
 }
 
 /*-----------------------------------------------------------------------------------*/
