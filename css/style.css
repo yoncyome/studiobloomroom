@@ -97,6 +97,7 @@ p#pagetop {position:fixed; right:15px; bottom:-10px; z-index:100000;}
 #carousel-example-1z .view img {position:relative;}
 #carousel-example-1z p.photoby {position:absolute; z-index:100000;right:1%; bottom:10%; writing-mode: vertical-rl; -ms-writing-mode: tb-rl; color:#fff; text-shadow:1px 1px 0 rgba(0,0,0, 0.1), -1px -1px 0 rgba(0,0,0, 0.1), -1px 1px 0 rgba(0,0,0, 0.1), 1px -1px 0 rgba(0,0,0, 0.1), 0px 1px 0 rgba(0,0,0, 0.1),  0-1px 0 rgba(0,0,0, 0.1), -1px 0 0 rgba(0,0,0, 0.1), 1px 0 0 rgba(0,0,0, 0.1);}
 
+.carousel .carousel-indicators li {box-shadow:1px 1px 0 rgba(0,0,0, 0.1), -1px -1px 0 rgba(0,0,0, 0.1), -1px 1px 0 rgba(0,0,0, 0.1), 1px -1px 0 rgba(0,0,0, 0.1), 0px 1px 0 rgba(0,0,0, 0.1),  0-1px 0 rgba(0,0,0, 0.1), -1px 0 0 rgba(0,0,0, 0.1), 1px 0 0 rgba(0,0,0, 0.1);}
 .carousel-control-prev, .carousel-control-next {display:none;}
 
 @media only screen and (max-width: 768px) {
