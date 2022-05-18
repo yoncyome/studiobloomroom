@@ -76,8 +76,6 @@ a:hover {text-decoration:none!important;}
   transition: all 0.5s ease-in-out 0s;
 }
 
-
-
 p#pagetop {position:fixed; right:15px; bottom:-10px; z-index:100000;}
 
 @media only screen and (max-width: 768px) {
@@ -120,20 +118,20 @@ ul.extlink li {display:inline-block; background:#999; margin:0 5px 0 0; padding:
 /*  Work
 /*-----------------------------------------------------------------------------------*/
 
-#work {
+#work,#spec {
   padding-bottom: 50px;
 }
 
-#work .portfolio-list {
+#work .portfolio-list,#spec .portfolio-list {
   margin-bottom: 50px;
 }
 
-#work .portfolio-list .nav {
+#work .portfolio-list .nav,#spec .portfolio-list .nav  {
 	display: inline;
   margin: 0;
 }
 
-#work .portfolio-list .nav li {
+#work .portfolio-list .nav li,#spec .portfolio-list .nav li {
   margin: 0 40px 0 0; height:35px;
 	display:inline-block;
   font-size: 1.4rem;
@@ -144,7 +142,7 @@ ul.extlink li {display:inline-block; background:#999; margin:0 5px 0 0; padding:
   letter-spacing: 0.02em;
   text-transform: capitalize;
 }
-#work .portfolio-list .nav li a {line-height:2em;}
+#work .portfolio-list .nav li a,#spec .portfolio-list .nav li a {line-height:2em;}
 
 @media only screen and (max-width: 768px) {
  #work .portfolio-list .nav li {margin: 0 30px 0 0;}
@@ -209,3 +207,7 @@ ul.extlink li {display:inline-block; background:#999; margin:0 5px 0 0; padding:
   #footer p.copyright {font-size:1.0rem;}
 
 }
+
+/*-----------------------------------------------------------------------------------*/
+/*  ACCESS
+/*-----------------------------------------------------------------------------------*/
