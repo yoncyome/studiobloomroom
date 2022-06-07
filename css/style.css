@@ -160,6 +160,10 @@ ul.extlink li {display:inline-block; background:#999; margin:0 5px 0 0; padding:
   display: inline-block;  position:relative;
   width: 100%; z-index:10;
 }
+#work .portfolio-container .col-lg-4 {
+padding-right: 0px;
+    padding-left: 0px;
+}
 
 #work p.tag {margin:0; padding:3px 10px; font-size:1rem; position:absolute; z-index:10000; background:rgba(255,255,255,0.8);}
 #work p.title {margin:0; padding:5px 0 0; font-size:1.2rem; font-weight:bold; text-align:left; line-height:2rem;}
@@ -167,7 +171,7 @@ ul.extlink li {display:inline-block; background:#999; margin:0 5px 0 0; padding:
 #work p.comment {margin:0; padding:5px 0 0; font-size:1rem; line-height:1.6rem; text-align:left;}
 
 .portfolio-thumbnail {
-  margin-bottom: 30px;
+  margin-bottom: 0px;
   overflow: hidden;
   min-height: 260px;
 }
