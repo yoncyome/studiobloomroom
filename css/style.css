@@ -246,6 +246,7 @@ padding-right: 0px;
   margin-top: 150px; font-size: 2.4em;
 }
 #spec p,#access p,#about p {text-align:left;}
+#spec p {padding-left: 18px;}
 #access h1 {
   margin-top: 50px;
 }
@@ -261,6 +262,7 @@ padding-right: 0px;
 #spec .col,#access .col {width: 100%;}
 #spec img {width: 100%;}
 #about .section-title {width: 100%;}
+#about p {font-size: 1.0em;}
 #about dl.history dt {width: 30%; font-weight: normal;}
 #about dl.history dd {width: 70%;}
 }
