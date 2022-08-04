@@ -128,7 +128,7 @@ ul.extlink li a {color:#fff;}
 }
 
 #work h2,ul {display: inline-block; vertical-align:middle;}
-#work h2 {padding-left: 3.5em;}
+#work h2 {padding-left: 2em;}
 #work ul {padding-top:3.5em;}
 #work ul.extlink{padding:3.5em 0 0 1.5em;}
 
@@ -258,6 +258,8 @@ padding-right: 0px;
 #about dl.history dd {width: 90%;}
 
 @media only screen and (max-width: 768px) {
+#spec .col,#access .col {width: 100%;}
+#spec img {width: 100%;}
 #about .section-title {width: 100%;}
 #about dl.history dt {width: 30%; font-weight: normal;}
 #about dl.history dd {width: 70%;}
