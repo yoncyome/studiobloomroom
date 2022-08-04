@@ -133,12 +133,12 @@ ul.extlink li a {color:#fff;}
 #work ul.extlink{padding:3.5em 0 0 1.5em;}
 
 #work .portfolio-list,#spec .portfolio-list {
-  margin-bottom: 50px;
+  margin-bottom: 20px;
 }
 
 #work .portfolio-list .nav,#spec .portfolio-list .nav  {
-	display: inline;
-  margin: 0;
+	display:inline-block;
+  margin: 0; line-height: 2.8em;
 }
 
 #work .portfolio-list .nav li,#spec .portfolio-list .nav li {
