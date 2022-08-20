@@ -5,9 +5,8 @@ body,
   height: 100%; }
 
 /* Heading Base Styles */
-h2 {padding:70px 0 20px;}
-h3 {font-size:;}
-h4 {font-size:;}
+h2 {padding:70px 0 20px; font-size: 2.4em;}
+h3 {font-size:1.6em;}
 p.caution {font-size:0.8rem;}
 
 /* Block Box Styles */
@@ -38,20 +37,25 @@ a:hover {text-decoration:none!important;}
 
 /* Navbar animation */
 .navbar {
-  background-color: rgba(255, 255, 255, 0.5); }
+  background-color: rgba(0,0,0,0.4); }
 
 .top-nav-collapse {
-  background-color: rgba(255, 255, 255, 0.9); }
+  background-color: rgba(0,0,0,0.4); }
+
+.navbar .logo img {width:50%;}
 
 /* Adding color to the Navbar on mobile */
 @media only screen and (max-width: 768px) {
-  .navbar {
-    background-color: #fff; } 
   .navbar.navbar-dark .navbar-nav .nav-item.active > .nav-link {
 		border-bottom:none;}
     .navbar.navbar-dark .breadcrumb .nav-item.active > .nav-link:hover,
     .navbar.navbar-dark .navbar-nav .nav-item.active > .nav-link:hover {
-      color: #000; }		
+      color: #000; }
+	.navbar {
+  background-color: rgba(0,0,0,0.7); }
+.top-nav-collapse {
+  background-color: rgba(0,0,0,0.7); }
+	.navbar .logo img {width:100%;}
 
 }
 
@@ -67,7 +71,7 @@ a:hover {text-decoration:none!important;}
 #header .top-nav-collapse li.nav-item {font-size:1.3rem;}
 
 #header .navbar-nav .nav-link:hover {
-	border-bottom:2px solid #000;
+	border-bottom:2px solid #fff;
   -moz-transition: all 0.5s ease-in-out 0s;
   -ms-transition: all 0.5s ease-in-out 0s;
   -o-transition: all 0.5s ease-in-out 0s;
@@ -78,8 +82,12 @@ a:hover {text-decoration:none!important;}
 p#pagetop {position:fixed; right:15px; bottom:-10px; z-index:100000;}
 
 @media only screen and (max-width: 768px) {
-  #header strong img#logo {width:90%;}
-
+	#header strong img#logo {width:100%;}
+	#header .navbar-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255,1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+	#header .navbar .container {display: flex;}
+	#header .logo {width: 90px;}
 }
 
 /*-----------------------------------------------------------------------------------*/
@@ -88,21 +96,24 @@ p#pagetop {position:fixed; right:15px; bottom:-10px; z-index:100000;}
 #carousel-example-1z h1,
 #carousel-example-1z p.rabel {text-align:center!important;}
 #carousel-example-1z h1 {margin-bottom:-100px;}
-#carousel-example-1z p.photoby {position:absolute; z-index:100000;right:10%; bottom:50px;}
+#carousel-example-1z .view img {position:relative;}
+#carousel-example-1z p.photoby {position:absolute; z-index:100000;right:1%; bottom:10%; writing-mode: vertical-rl; -ms-writing-mode: tb-rl; color:#fff; text-shadow:1px 1px 0 rgba(0,0,0, 0.1), -1px -1px 0 rgba(0,0,0, 0.1), -1px 1px 0 rgba(0,0,0, 0.1), 1px -1px 0 rgba(0,0,0, 0.1), 0px 1px 0 rgba(0,0,0, 0.1),  0-1px 0 rgba(0,0,0, 0.1), -1px 0 0 rgba(0,0,0, 0.1), 1px 0 0 rgba(0,0,0, 0.1);}
 
+.carousel .carousel-indicators li {box-shadow:1px 1px 0 rgba(0,0,0, 0.1), -1px -1px 0 rgba(0,0,0, 0.1), -1px 1px 0 rgba(0,0,0, 0.1), 1px -1px 0 rgba(0,0,0, 0.1), 0px 1px 0 rgba(0,0,0, 0.1),  0-1px 0 rgba(0,0,0, 0.1), -1px 0 0 rgba(0,0,0, 0.1), 1px 0 0 rgba(0,0,0, 0.1);}
 .carousel-control-prev, .carousel-control-next {display:none;}
 
 @media only screen and (max-width: 768px) {
   #carousel-example-1z h1 img {width:100%;}
 	#carousel-example-1z p.rabel img {width:40%;}	
-
+	#carousel-example-1z p.photoby {font-size: 1rem;}
 }
 
 /*-----------------------------------------------------------------------------------*/
 /*  Icon
 /*-----------------------------------------------------------------------------------*/
-ul.extlink {margin:0;}
-ul.extlink li {display:inline-block; background:#999; margin:0 5px 0 0; padding:3px 5px; text-align:left;}
+ul.extlink {margin:0; padding: 10px 0 0;}
+ul.extlink li {display:inline-block; background:#a0a0a0; border-radius: 5px; margin:0 5px 0 0; padding:3px 8px; text-align:left;}
+ul.extlink li a {color:#fff;}
 
 .navbar-nav li {
 	font-family:'Font Awesome 5 Free';
@@ -112,20 +123,25 @@ ul.extlink li {display:inline-block; background:#999; margin:0 5px 0 0; padding:
 /*  Work
 /*-----------------------------------------------------------------------------------*/
 
-#work {
+#work,#spec {
   padding-bottom: 50px;
 }
 
-#work .portfolio-list {
-  margin-bottom: 50px;
+#work h2,ul {display: inline-block; vertical-align:middle;}
+#work h2 {padding-left: 2em;}
+#work ul {padding-top:3.5em;}
+#work ul.extlink{padding:3.5em 0 0 1.5em;}
+
+#work .portfolio-list,#spec .portfolio-list {
+  margin-bottom: 20px;
 }
 
-#work .portfolio-list .nav {
-	display: inline;
-  margin: 0;
+#work .portfolio-list .nav,#spec .portfolio-list .nav  {
+	display:inline-block;
+  margin: 0; line-height: 2.8em;
 }
 
-#work .portfolio-list .nav li {
+#work .portfolio-list .nav li,#spec .portfolio-list .nav li {
   margin: 0 40px 0 0; height:35px;
 	display:inline-block;
   font-size: 1.4rem;
@@ -136,7 +152,7 @@ ul.extlink li {display:inline-block; background:#999; margin:0 5px 0 0; padding:
   letter-spacing: 0.02em;
   text-transform: capitalize;
 }
-#work .portfolio-list .nav li a {line-height:2em;}
+#work .portfolio-list .nav li a,#spec .portfolio-list .nav li a {line-height:2em;}
 
 @media only screen and (max-width: 768px) {
  #work .portfolio-list .nav li {margin: 0 30px 0 0;}
@@ -154,6 +170,10 @@ ul.extlink li {display:inline-block; background:#999; margin:0 5px 0 0; padding:
   display: inline-block;  position:relative;
   width: 100%; z-index:10;
 }
+#work .portfolio-container .col-lg-4 {
+padding-right: 0px;
+    padding-left: 0px;
+}
 
 #work p.tag {margin:0; padding:3px 10px; font-size:1rem; position:absolute; z-index:10000; background:rgba(255,255,255,0.8);}
 #work p.title {margin:0; padding:5px 0 0; font-size:1.2rem; font-weight:bold; text-align:left; line-height:2rem;}
@@ -161,7 +181,7 @@ ul.extlink li {display:inline-block; background:#999; margin:0 5px 0 0; padding:
 #work p.comment {margin:0; padding:5px 0 0; font-size:1rem; line-height:1.6rem; text-align:left;}
 
 .portfolio-thumbnail {
-  margin-bottom: 30px;
+  margin-bottom: 0px;
   overflow: hidden;
   min-height: 260px;
 }
@@ -172,7 +192,24 @@ ul.extlink li {display:inline-block; background:#999; margin:0 5px 0 0; padding:
 /*-----------------------------------------------------------------------------------*/
 /*  MEMBER
 /*-----------------------------------------------------------------------------------*/
+#member section .row:first-child {padding-bottom: 80px;}
 #member ul {padding-inline-start: 0px;}
+#member dl.history {font-size: 1em; margin: 1em 0 0; display: flex; flex-wrap: wrap; width: 100%;}
+#member dl.history dt {width: 15%; font-weight: normal;}
+#member dl.history dd {width: 85%;}
+#member h4{margin: 1.2em 0 0; font-weight: bold; font-size: 1.2em;}
+#member p {margin: 1.2em 0 0; font-size: 1em;}
+#member dl.no-top {margin: 0.5em 0 0;}
+
+@media only screen and (max-width: 768px) {
+	#member img {width:100%;}
+	#member dl.history {font-size: 1em;}
+	#member .d-block {padding: 1em 0 0;}
+
+}
+
+
+
 
 /*-----------------------------------------------------------------------------------*/
 /*  SNS
@@ -201,3 +238,48 @@ ul.extlink li {display:inline-block; background:#999; margin:0 5px 0 0; padding:
   #footer p.copyright {font-size:1.0rem;}
 
 }
+
+/*-----------------------------------------------------------------------------------*/
+/*  spec/access/about
+/*-----------------------------------------------------------------------------------*/
+#spec h1,#access h1,#about h1 {
+  margin-top: 150px; font-size: 2.4em;
+}
+#spec p,#access p,#about p {text-align:left;}
+#spec p {padding-left: 18px;}
+#access h1 {
+  margin-top: 50px;
+}
+#spec h2,#access h2 {font-size: 2em;}
+#spec h2 {padding: 40px 0 20px;}
+#about h2 {padding: 100px 0 20px; font-weight: bold;}
+#about .section-title {width: 60%;}
+#about dl.history {font-size: 1em; margin: 5em 0 0; display: flex; flex-wrap: wrap; width: 100%; text-align: left;}
+#about dl.history dt {width: 10%; font-weight: normal;}
+#about dl.history dd {width: 90%;}
+
+@media only screen and (max-width: 768px) {
+#spec .col,#access .col {width: 100%;}
+#spec img {width: 100%;}
+#about .section-title {width: 100%;}
+#about p {font-size: 1.0em;}
+#about dl.history dt {width: 30%; font-weight: normal;}
+#about dl.history dd {width: 70%;}
+}
+
+#access ul.extlink {display:flex;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
