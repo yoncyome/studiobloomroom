@@ -38,9 +38,9 @@ CountdownTimer.prototype = {
 // ▼ 開始＆終了日時の指定と日付の判別
 function CDT() {
   var myD = Date.now(); // 1970/1/1午前0時から現在までのミリ秒
-  var start = new Date('2021-09-01T00:00+00:00'); // 開始日時の指定
+  var start = new Date('2022-09-01T00:00+00:00'); // 開始日時の指定
   var myS = start.getTime(); // 1970/1/1午前0時からの開始日時までのミリ秒
-  var end = new Date('2021-10-01T00:00+00:00'); // 終了日時の指定
+  var end = new Date('2022-10-01T00:00+00:00'); // 終了日時の指定
   var myE = end.getTime(); // 1970/1/1午前0時から終了日時までのミリ秒
 
   // 今日が開始日前か期間中か終了日後かの判別
