@@ -133,8 +133,8 @@ ul.extlink li a {color:#fff;}
 #work ul.extlink{padding:3.5em 0 0 1.5em;}
 @media only screen and (max-width: 768px) {
  #work h2,ul {display:block;}
- #work h2 {padding-right: 93px;}
- #work ul.extlink {padding: 0;}
+ #work h2 {padding-right: 100px;}
+ #work ul.extlink {padding: 0 23px 0 0;}
 }
 #work .portfolio-list,#spec .portfolio-list {
   margin-bottom: 20px;
