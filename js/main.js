@@ -129,3 +129,17 @@ $(document).ready(function() {
 
 
 });
+
+  // ========================================================================= //
+  //  //MailtoUI Chromeでメーラー起動のバグフィックス
+  // ========================================================================= //
+window.addEventListener('load', function(){
+  if(/chrom(e|ium)/.test(navigator.userAgent.toLowerCase())){
+    var script = $('<script>').attr({
+      'type': 'text/javascript',
+      'src': 'https://cdn.jsdelivr.net/npm/mailtoui@1.0.3/dist/mailtoui-min.js'
+    });
+    $('body')[0].appendChild(script[0]);
+  }
+});
+
