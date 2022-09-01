@@ -49,7 +49,7 @@ function CDT() {
     var tl = end;
   } // 期間中
   else if (myS > myD) {
-    var text = '<span>Until the end </span>';
+    var text = '<span>Before start date </span>';
     var tl = start;
   } // 開始日前
   else {
