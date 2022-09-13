@@ -8,10 +8,10 @@ $(window).scroll(function(){
 	if((pageState > -713) && (pageState <= -153)){
 		$(".navbar-nav li").removeClass("active");
 		$(".navbar-nav li#menu01").addClass("active");
-	}else if((pageState > -199) && (pageState <= 6700)){
+	}else if((pageState > -199) && (pageState <= 6600)){
 		$(".navbar-nav li").removeClass("active");
 		$(".navbar-nav li#menu02").addClass("active");
-	}else if((pageState > 6700) && (pageState <= 30000)){
+	}else if((pageState > 6600) && (pageState <= 30000)){
 		$(".navbar-nav li").removeClass("active");
 		$(".navbar-nav li#menu03").addClass("active");
 	}
